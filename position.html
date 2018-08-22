@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<style>
+* {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+.nav>li {
+    display: inline-block;
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+    width: 100px;
+    height: 65px;
+    margin: 5px;
+    position: relative;
+}
+.nav>li:hover {
+    border-bottom: 10px solid green;
+}
+.nav>li:hover .inner-nav {
+    display: block;
+}
+.inner-nav {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    list-style: none;
+}
+
+.inner-nav>li {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    height: 65px;
+}
+</style>
+</head>
+<body>
+    <ul class="nav">
+        <li>Lorem.</li>
+        <li>Earum.
+            <ul class="inner-nav">
+                <li>Lorem.</li>
+                <li>Error?</li>
+                <li>Repellat.</li>
+            </ul>
+        </li>
+        <li>Error?</li>
+    </ul>
+</body>
+</html>

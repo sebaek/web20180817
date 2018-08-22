@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+li {
+    width: 100px;
+    height: 30px;
+    background-color: aliceblue;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.outer > li:hover {
+    border-right: 5px solid blue;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.inner {
+    display: none;
+    position: absolute;
+    left: 102px;
+    top: -3px;
+}
+
+.inner > li {
+    background-color: black;
+    color: white;
+
+}
+
+.outer>li:nth-child(2) {
+    position: relative;
+}
+
+.outer>li:nth-child(2):hover>.inner {
+    display: block;
+}
+
+
+</style>
+</head>
+<body>
+    
+    <ul class="outer">
+        <li>Lorem.</li>
+        <li>Perferendis!
+            <ul class="inner">
+                <li>Lorem.</li>
+                <li>Voluptas.</li>
+                <li>Nesciunt.</li>
+            </ul>
+        </li>
+        <li>Earum!</li>
+    </ul>
+
+</body>
+</html>
