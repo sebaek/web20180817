@@ -1,0 +1,30 @@
+{
+    "variables": {
+        "lang": "ko",
+        "locale": "ko-KR",
+        "charset": "UTF-8",
+        "indentation": "\t",
+        "newline": "\n",
+        "bootstrap-css-cdn": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css",
+        "jquery-cdn": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+        "bootstrap-js-cdn": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    },
+    "html": {
+        "snippets": {
+            "b3": "html>(head>meta[charset=\"${charset}\"]+meta:vp+meta:edge+link:bs+script:jq+script:bs+title{Document})+body>.container\|",
+            "link:bs": "<link rel=\"stylesheet\" href=\"${bootstrap-css-cdn}\">",
+            "script:jq": "script[src=\"${jquery-cdn}\"]",
+            "script:bs": "script[src=\"${bootstrap-js-cdn}\"]",
+            "ull": "ul>li[id=${1} class=${2}]*2{ Will work with html, jade, haml and slim }",
+            "oll": "<ol><li id=${1} class=${2}> Will only work in html </ol>",
+            "ran": "{ Wrap plain text in curly braces }"
+        }
+    },
+    "css": {
+        "snippets": {
+            "cb": "color: black",
+            "bsd": "border: 1px solid ${1:red}",
+            "ls": "list-style: ${1}"
+        }
+    }
+}
