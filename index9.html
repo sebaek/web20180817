@@ -5,6 +5,7 @@
     <br>
     <input type="number" id="number2">
     <br>
+    <button onclick="plus();">&plus;</button>
     <button onclick="sub();">&minus;</button>
     <button onclick="multi();">&times;</button>
     <button onclick="divide();">&sol;</button>
@@ -12,6 +13,11 @@
     <p id="result"></p>
 
     <script>
+        function plus() {
+            var result = document.getElementById("number1").value +
+                         document.getElementById("number2").value;
+            document.getElementById("result").innerHTML = result;
+        }
         function sub() {
             var input1 = document.getElementById("number1");
             var input2 = document.getElementById("number2");

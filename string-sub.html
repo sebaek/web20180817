@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="input1">
+    <br>
+    <input type="number" id="input2">
+    <br>
+    <input type="number" id="input3">
+    <br>
+    <button onclick="substr();">click</button>
+    <p id="result"></p>
+
+    <script>
+        function substr() {
+            var text = document.getElementById("input1").value;
+            var start = document.getElementById("input2").value;
+            var end = document.getElementById("input3").value;
+            document.getElementById("result").innerHTML = 
+                text.slice(start, end);
+        }
+    </script>
+</body>
+</html>

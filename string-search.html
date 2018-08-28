@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="input1">
+    <br>
+    <input type="text" id="input2">
+    <br>
+    <button onclick="search();">click</button>
+    <p id="result"></p>
+
+    <script>
+        function search() {
+            var text1 = document.getElementById("input1").value;
+            var text2 = document.getElementById("input2").value;
+            document.getElementById("result").innerHTML = 
+                text1.indexOf(text2);
+        }
+    </script>
+</body>
+</html>
+
+
+
