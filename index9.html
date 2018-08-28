@@ -14,9 +14,11 @@
 
     <script>
         function plus() {
-            var result = document.getElementById("number1").value +
-                         document.getElementById("number2").value;
-            document.getElementById("result").innerHTML = result;
+            var text1 = document.getElementById("number1").value;
+            var text2 = document.getElementById("number2").value;
+            var num1 = Number(text1);
+            var num2 = Number(text2);
+            document.getElementById("result").innerHTML = num1 + num2;
         }
         function sub() {
             var input1 = document.getElementById("number1");
