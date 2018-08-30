@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").text("W3Schools Home")
+                .attr("href", function (i, v) {
+                    var end = v.lastIndexOf("/", v.length - 2);
+                    return v.substring(0, end);
+                });
+        });
+    </script>
+</head>
+
+<body>
+
+    <a href="https://www.w3schools.com/jquery/">Learn jquery here</a>
+
+</body>
+
+</html>
