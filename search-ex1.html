@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#input1").keyup(function() {
+                var text = $(this).val().toLowerCase();
+                $("#list1 li").each(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(text) > -1);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <ul id="list1">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Ullam, ducimus dolore.</li>
+        <li>Quam, esse distinctio?</li>
+        <li>Amet, iste ipsa.</li>
+        <li>Excepturi, aperiam cumque!</li>
+        <li>Fuga, dicta vero.</li>
+        <li>Esse, voluptatibus voluptates.</li>
+        <li>Est, debitis eveniet?</li>
+        <li>Reprehenderit, impedit tempora.</li>
+        <li>Tenetur, veritatis beatae?</li>
+        <li>Fuga, rem vitae.</li>
+        <li>Perferendis, reiciendis culpa!</li>
+        <li>Minus, eveniet necessitatibus.</li>
+        <li>Voluptatem, facilis. Provident.</li>
+        <li>Delectus, ea assumenda.</li>
+        <li>Natus, facere tempore!</li>
+        <li>Veritatis, obcaecati laudantium!</li>
+        <li>Nostrum, dolore cumque.</li>
+        <li>Delectus, aliquid nobis!</li>
+        <li>Vitae, impedit quaerat?</li>
+    </ul>
+
+</body>
+
+</html>
